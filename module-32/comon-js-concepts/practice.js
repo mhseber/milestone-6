@@ -156,7 +156,7 @@ function sum(a, b, c, d) {
 }
 
 const totalPoints = sum(45, 67, 87, 54, 32, 333);
-console.log(totalPoints)
+// console.log(totalPoints)
 
 
 
