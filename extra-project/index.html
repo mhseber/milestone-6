@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iphone</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- spinner animation -->
+    <style>
+        #spinner {
+            display: none;
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #000;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+
+        /* spinner animation */
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <!-- input + button -->
+        <div class="flex justify-center items-center pt-28">
+            <input id="" type="text" placeholder="Search" class="input input-bordered w-full max-w-xs" />
+            <button onclick="handleSearch()" id="" class="btn btn-primary text-white">Search</button>
+        </div>
+        <div id="spinner"></div>
+        <div class="flex justify-center items-center pt-11">
+            <button onclick="handleShowAll()" class="  btn btn-primary"> Show All</button>
+        </div>
+
+    </main>
+    <script src="js/index.js"></script>
+</body>
+
+
+</html>
